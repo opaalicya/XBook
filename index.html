@@ -1,219 +1,226 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanabooks</title>
-<link rel="stylesheet" href="reset.css">
-<link rel="preconnect" href="" crossorigin>
-<link rel="preconnect" href="">
-<link href="" rel="" >
-<link rel="stylesheet" href="reset.css"/>
-<link rel="stylesheet" href="style.css">
+    <title>XBook</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
-</body>
-<header class="cabeçalho">
-<div class="container">
-   <input type="checkbox" id="menu" class="container_botao"></span>
-   <label for="menu">
-       <span class="cabeçalho_menu-hamburguer container_botao">
-       </label>
-    <ul class="lista-menu">
-        <li class="lista-menu_titulo">Categorias</li>
-        <li class="lista-menu_item">
-            <a href="#" class="lista-menu_link">Favoritos</a>
-        </li>
-    <li class="lista-menu_item">
-          <a href="#" class="lista-menu_link">Minha coleção</a>
-    </li>
-    </ul>
-    <img src="" alt="logo da Sanabooks" class="container_imagem">
-</div>
-<div class="container">
-    <a href="#"><img src="" alt="meus favoritos" class="container_imagem"></a>
-    <a href="#"><img src="" alt="carrinho de compras" class="container_imagem"></a>
-    <a href="#"><img src="" alt="meu perfil" class="container_imagem"></a>
-</div>
-</header>
-
-<section class="banner">
-   <h2 class="banner_titulo">Onde vai começar?</h2>
-   <p class="banner_texto">Encontre livros, Mangas e Comics exclusivas no nosso site!
-    Alugue pela internet ou compre!</p>
-    <input type="search" class="banner_pesquisa" placeholder="escolha sua proxima leitura!">
-</section>
-
-<section class="carrosel">
-    <h2 class="carrosel_titulo">Lançamentos do mês!</h2>
-    <!-- Slider main container -->
-    <div class="swiper">
-        <!--Additional required wrapper-->
-          <div class="swiper-wrapper">
-            <!--Slides-->
-            <div class="swiper-slide"><img src="s-l1200.jpg"
-                alt="Apotecaria"></div>
-                <div class="swiper-slide"><img src="811Vw07xTPL._AC_UF1000,1000_QL80_.jpg"
-                    alt="Hanako"></div>
-                    <div class="swiper-slide"><img src="D_NQ_NP_769712-MLB41846530017_052020-O.webp" alta="Kimetsu">
-                    </div>
-            <div class="swiper-slide">
-                <img src="" alt="Livro Guia Front end" />
-                </div>
-                <div class="swiper-slide">
-                    <img src=""  alt="Livro sobre portugol" />
-                </div>
-        <div class="swiper-slide">
-            <img src=""  alt="Livro sobre acessibilidade" />
-            </div>
-        </div>
-
-                <!--If we need navigation butoons-->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-    </div>
-    <div class="card">
-        <div class="card_descrição">
-            <div class="descrição">
-                <h3 class="descrição_titulo">Talvezz você támbem se interrese por isso...</h3>
-                <h2 class="descrição_titulo-livro">Jogos e Gamificação</h2>
-                <p class="descrição_texto">
-                    Contruindo jogos que possam deixar o ensino-aprendizagem com outra cara.
-                </p>
-            </div>
-            <img src="" class="descrição_imagem" />
-        </div>
-        <div class="card_botões">
-            <ul class="botões">
-                <li class="botões_item">
-                    <img src="" alt="Favoritar livro"/>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Mangas</a>
                 </li>
-                <li class="botões_item">
-                    <img src="" alt="Adicionar no carrinho de compras"/>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Comics</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fanfiction</a>
+            </ul>
+            <img src="icone-x-avec-cercle-violet.png" alt="Logo da XBook" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Books</b></h1>
+        </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opções-menu" class="opcoes__botao">
+            <label for="opcoes-menu" class="opcoes__rotulo">
+                <li class="opcoes__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Mangas</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Comics</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Fanfiction</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Anime</a>
                 </li>
             </ul>
-            <a href="#" class="botões_ancora">Saiba mais</a>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="pngwing.com.png" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container-link">
+                <img src="bolsa-de-compras.png" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="do-utilizador.png" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
         </div>
-    </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner-titulo">Onde começar?</h2>
+        <p class="banner-texto">Encontre livros, Mangas e Comics exclusivas no nosso site!
+            Alugue pela internet ou compre!</p>
+        <input type="search" class="banner-pesquisa" placeholder="Escolha agora a sua próxima leitura!">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel-container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-</section>
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="s-l1200.jpg"
+                            alt="O diario de uma apotecaria volume 17"></div>
+                    <div class="swiper-slide"><img src="811Vw07xTPL._AC_UF1000,1000_QL80_.jpg"
+                            alt="hanako"></div>
+                    <div class="swiper-slide"><img src="D_NQ_NP_769712-MLB41846530017_052020-O.webp"
+                            alt="kimetsu"></div>
+                 </div>
 
-<section class="=carrosel">
-    <h2 class="=carrosel_titulo">Classicos dos mangas></h2>
-    <div class="=swiper">
-        <!--Additional required wrapper-->
-        <!--If we need pagination-->
-<div class="swiper-pagination"></div>
-
-    <div class="=swiper-wrapper">
-        <!--Slides-->
-        <div class="swiper-slide"><img src
-            alt="Livro sobre apache kafka e spring boot da alura books"></div>
-            <div class="swiper-slide"><img src="">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <div class="swiper-slide"><img src="" alt="Livro sobre liderança em desing da Sana books">
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descricao">
+                    <!-- 1º coluna -->
+                    <div class="descricoo">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Xtale</h2>
+                        <p class="descricao__texto">Escrito e desenhado por Jael Peñaloza.</p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="42acc1eae1a201d7b67b469b152f9cf9.jpg" class="descricao__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botoes">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botoes__item"><img src="pngwing.com.png" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="bolsa-de-compras.png" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
             </div>
-<div class="swiper-slide"><img src="" alt="Livro sobre javascript assertivo da Sanabooks">
-</div>
-<div class="swiper-slide"><img src=""  alt="Livro Guia front end"></div>
-<div class="swiper-slide"><img src="" alt="Livro sobre Ação"></div>
-<div class="=swiper-slide"><img src=""  alt="livro sobre acessibilidade"></div>
-    </div>
+        </div>
+    </section>
 
-    <!--If we need navigation buttons-->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-</div>
+    <section class="carrossel">
+        <h2 class="carrossel-titulo">Classicos dos mangas</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-<div class="+card">
-    <!--1° linha-->
-    <div class="card_descrição">
-        <!--1° coluna-->
-        <div class="descrição">
-            <img class="" alt="Avaliação 5 estrelas">
-            <h3 class="descrição_titulo">Autor/a do mês</h3>
-            <h2 class="descrição_titulo-livro">@70|5</h2>
-            <p  class="descrição_texto">@70|5 e um/a escritor/a de livros e mangas/comics 
-              no estilo fantasia misturado com aventura e 
-              romance, como: "Entre o Sol e a Lua";
-               "In The Middle Of Midnight" e "My Favorite Idol" entre outros titulos.
-              Informação EXCLUSIVA: A/O escritor/a esta escrevendo uma historia a mais de 4 anos! Que de acordo com ele/a esta apenas na metade, em entrevista, disse que essa historia saira no minimo em 2028! E que tera talvez uma serie animada. Aguardaremos ansiosos!
-            </p >
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="inu-yasha-wideban-01-sobrecapa-layout-p.jpg"
+                            alt="inuyasha"></div>
+                    <div class="swiper-slide"><img src="card-captor-sakura-especial-12-capa.jpg"
+                            alt="sakura sensitiva"></div>
+                    <div class="swiper-slide"><img src="91eBU+lm+rL._AC_UF1000,1000_QL80_.jpg"
+                            alt="naruto"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <!--2° coluna-->
-            <img src="" class="descrição_imagem">
-    </div>
 
-    <!--2°<linha-->
-    <div class="card_botões">
-     <!--1°coluna-->   
-     <ul class="botões">
-     <li class="botões_item"><img src="" alt="favoritar livro"></li>
-     <li class="=botões_item"><img src="" alt="Adicionar no carrinho de compras"></li>
-     </ul>
-     <!--2° coluna-->
-     <a href="#" class="botões_ancora">Saiba mais</a>
-    </div>
-</div>
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descricao">
+                    <!-- 1º coluna -->
+                    <div class="descricao">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descricao__titulo">Autor/a do Mês</h3>
+                        <h2 class="descricao__titulo-livro">Alois,Christopher</h2>
+                        <p class="descricao__texto">e um/a escritor/a no estilo fantasia misturado com aventura e romance, como: "Entre o Sol e a Lua"; "In The Middle Of Midnight" e "My Favorite Idol" entre outros titulos
+                    <!-- 2º coluna -->
+                    <img src="aa (1).png" class="descricao__imagem">
+                </div>
 
+                <!-- 2º linha -->
+                <div class="card__botoes">
+                    <!-- 1º coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</section>
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Romance</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Anime</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Drama</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Yaoi</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Yuri</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Jogos</a>
+            </li>
+        </ul>
+    </section>
 
-<section class="tópicos">
-    <h2 class="tópicos_titulo">TÓPICOS VISITADOS RECENTENTE</h2>
-    <UL class="tópicos_lista">
-<li class="tópicos_item"><a href="#" class="tópicos_link">Android</a></li>
-<li class="tópicos_item">
-    <a href="#" class="tópicos_link">Comedia</a>
-</li>
-<li class="tópicos_item">
-    <a href="#" class="tópicos_link">Drama</a>
-</li>
-<li class="tópicos_item">
-<a href="#" class="tópicos_link">Romançe</a>
-</li>
-<li class="tópicos_item">
-<a href="#" class="tópicos_link">Jogos</a>
-</li>
-<li class="tópicos_item">
-<a href="#" class="tópicos_link">Anime</a>
-</li>
-<li class="tópicos_item">
-<a href="#" class="tópicos_link">Aventura</a>
-</li>
-    </UL>
-</section>
+    <section class="contato">
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, Novos livros e Comics, promoções e Muito mais!.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
 
-<section class="contato">
-  <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
-<p class="contato_texto">
-Atualizações de e-books, novos livros e Mangas, promoções e muito mais!
-</p>
-<input type="email" placecholder="Cadastre seu e-mail" class="contato_email" />
-</section>
+    <hr />
 
-<hr />
+    <footer class="rodape">
+        <h2 class="rodape__titulo">site By AloisCreation
+            (criado para uso pedagogico, não plagiar ideia, caso faça de os creditos)</h2>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Copyright© 2022-2024, XBook Conpany Todos os direitos reservados. Todos os textos, imagens, gráficos, animações, vídeos, músicas, sons e outros materiais são protegidos por direitos autorais e outros direitos de propriedade intelectual pertencentes à Xbook Company, suas subsidiárias, afiliadas e licenciantes.
+                A XBook Company é, também, proprietária dos direitos autorais de desenvolvimento, seleção, coordenação, diagramação e disposição dos materiais neste site. É expressamente vedada a cópia ou reprodução destes materiais para uso ou distribuição comercial, a modificação destes materiais, sua inclusão em outros websites e o seu envio e publicação em outros meios digitais e físicos, ou de qualquer outra forma dispor de tais materiais sem a devda autorização, estando sujeito às responsabilidades e sanções legais.</li>
+</body>
 
-<footer class="rodapé">
- <h2 class="rodapé_titulo">site By AloisCreation
-  (criado para uso pedagogico, não plagiar ideia, caso faça de os creditos)</h2>
-</footer>
-
-<script src="" ></script>
-<script>
-     const swiper = new Swiper(".swiper",{
-        spaceBetween:10,
-        slidesPerView: 3,
-        pagination:{
-               el:".swiper-pagination",
-               type: "bullets",
-         },
-        });
-        </script>
-        </body>
-
-        </html>
+</html>
